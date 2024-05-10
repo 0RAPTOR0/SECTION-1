@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Login page</title>
     <style>
-        .card{
+        * {
+            font-family: roboto;
+        }
+
+        .card {
             border: 2px solid red;
             width: 20%;
 
@@ -17,11 +22,13 @@
 
         }
 
-        .card-title, .card-subtitle{
+        .card-title,
+        .card-subtitle {
             text-align: center;
         }
 
-        .text-input, .mybtn{
+        .text-input,
+        .mybtn {
             display: block;
             width: 100%;
 
@@ -30,42 +37,48 @@
 
         }
 
-        .text-input{
+        .text-input {
             margin-bottom: 5px 20px;
             padding: 5px 10px;
         }
 
-        .mybtn{
+        .mybtn {
             padding: 5px 10px;
             background-color: deepskyblue;
             cursor: pointer;
         }
 
-        body{
+        body {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
+
+
+            background-image: url("https://images.unsplash.com/photo-1533090161767-e6ffed986c88?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHBsYW50JTIwd2FsbHBhcGVyfGVufDB8fDB8fHww");
+            background-size: cover;
         }
     </style>
 </head>
+
 <body>
-    
-<div class="card">
-    <form>
-    <h3 class="card-title">WELCOME BACK</h3>
-    <p class="card-subtitle">Continue Your Journey With Us</p><br>
 
-    <label>E-mail Address</label>
-    <input class="text-input" type="email"><br>
+    <div class="card">
+        <form>
+            <h3 class="card-title">WELCOME BACK</h3>
+            <p class="card-subtitle">Continue Your Journey With Us</p><br>
 
-    <label>Passwaord</label>
-    <input class="text-input" type="password"><br>
-    
-    <button class="mybtn">Summit</button><br>
-    </form>
+            <label>E-mail Address</label>
+            <input class="text-input" type="email"><br>
 
-</div>
+            <label>Passwaord</label>
+            <input class="text-input" type="password"><br>
+
+            <button class="mybtn">Summit</button><br>
+        </form>
+
+    </div>
 
 </body>
+
 </html>
