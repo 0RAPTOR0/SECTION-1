@@ -7,6 +7,10 @@
 
     <STYLE>
 
+        :root{
+            --theme-color:rgb(141, 23, 127);
+        }
+
         HEADER{
             background-image: url("https://t4.ftcdn.net/jpg/06/14/46/77/360_F_614467744_7eLjYhKWJIvnu8fk8MTp9VXFYpB15J3p.jpg");
             background-image: linear-gradient(0deg , skyblue);
@@ -16,6 +20,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+        
         }
         header h1{
             margin: 0;
@@ -47,7 +52,44 @@
             background-color: aliceblue;
             color: burlywood;
         }
+
+        .section{
+            border: 2px solid cyan;
+            padding: 50px 200px;
+        }
+
+        .card-group{
+            display: flex;
+            gap: 30px;
+            
+        }
+
+        .card{
+            text-align: center;
+           /* border:2px solid rgb(14, 253, 253);*/
+            padding: 50px;
+            border-radius: 10px;
+            color: var(--theme-color);
+        }
+
+        .card:hover{
+            color: aliceblue;
+            background-color: var(--theme-color);
+            cursor: pointer;
+            transition-duration: 0.3s;
+        }
+
+        .section-title{
+            text-align: center;
+            font-size: 40px;
+            color:var(--theme-color)
+        }
+
+        
     </STYLE>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     
@@ -59,6 +101,37 @@
 
             </button>
     </header>
+
+    <section class="section feature-section">
+        <h1 class="section-title">FEATURE SECTION</h1>
+        
+            <div class="card-group">
+                <div class="card">
+                    <i class="fa-brands fa-rebel fa-6x"></i>
+                    <h2>FAST DELIVERY</h2>
+                    <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda incidunt similique, earum quaerat ratione labore dolorem vitae perspiciatis repellendus cumque. Nemo neque tenetur modi soluta.</P>
+
+                </div>
+                <div class="card">
+                    <i class="fa-brands fa-rebel fa-6x"></i>
+                    <h2>FAST DELIVERY</h2>
+                    <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda incidunt similique, earum quaerat ratione
+                        labore dolorem vitae perspiciatis repellendus cumque. Nemo neque tenetur modi soluta.</P>
+                
+                </div>
+
+                <div class="card">
+                    <i class="fa-brands fa-rebel fa-6x"></i>
+                    <h2>FAST DELIVERY</h2>
+                    <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda incidunt similique, earum quaerat ratione
+                                        labore dolorem vitae perspiciatis repellendus cumque. Nemo neque tenetur modi soluta.</P>
+                                
+                </div>
+
+            </div>
+
+
+    </section>
 
     <main>
 
