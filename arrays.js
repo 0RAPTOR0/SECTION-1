@@ -1,0 +1,25 @@
+const myArr = [ 765, 'Hello', true, console.log,[ 1, 2, 3]];
+
+console.log(myArr);
+
+const movies = ['Tere Naam', 'Animal', 'Pk', 'RRR', 'Deja Vu', 'Shaitaan']
+console.log(movies.length);
+
+// indexing
+console.log( movies[4]);
+console.log( movies.at(3));
+
+movies[4] = 'The Shawshank Redemption'
+console.log(movies);
+// to replace certain items
+
+console.log(movies.at(-3));
+// counting from back minus
+
+// slicing
+console.log(movies.slice(1,4));  //also works for strings 
+console.log(movies.slice(1, 40));
+console.log(movies.slice(1));
+
+const price = '₹536.65/-';
+console.log(price.slice());
