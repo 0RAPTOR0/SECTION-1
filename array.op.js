@@ -22,5 +22,4 @@ const newNums = [];
 for(let a of nums ){
     newNums.push(a**2)
 }
-
 console.log(newNums);
