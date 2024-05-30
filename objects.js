@@ -57,10 +57,26 @@ const budgetphone = smartphoneList.filter( ( phone ) => { return phone.price < 3
 console.log(budgetphone);
 
 //  filter all smartphones with brand Samsung
-const samsungPhones = smartphoneList.filter( ( phone ) => { return phone.brand === 'Samsung'}),
+const samsungPhones = smartphoneList.filter( ( phone ) => { return phone.brand === 'Samsung'});
 console.log(samsungPhones);
 
+const brands = smartphoneList.map( (phone) => { return phone.brand });
 
-// filter all smartphones with color 'black'
-console.log( ['a', 'b', 'c',].includes('c'));
-const blackPhones = smartphoneList.filter( ( phone ) => )
+console.log(brands);
+
+// to remove dublicate we use set
+console.log(new Set(brands));
+
+console.log(Array.from(new Set(brands)));
+
+const prices = smartphoneList.map(( phone ) => {return phone.price})
+console.log(prices);
+
+// to add 10% discount on all prices
+const price = smartphoneList.map(( phone ) => { return phone.price * 0.9});
+console.log(price);
+
+const brand = smartphoneList.map(( phone ) => { return phone.brand + ' ' + phone.model});
+console.log(brand);
+
+
